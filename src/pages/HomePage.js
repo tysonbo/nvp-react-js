@@ -10,6 +10,9 @@ export default function HomePage() {
       </p><br></br>
 
       <a href="http://dummy.restapiexample.com/api/v1/employees">http://dummy.restapiexample.com/api/v1/employees</a>
+      <br/>
+      <br/>     
+            <h3>Click 'Users' on the menu bar to the left or the drop down on the top right.</h3>
     </div>
   )
 }
