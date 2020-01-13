@@ -19,7 +19,7 @@ export default function UserPage(props) {
       const { data } = await axios(`https://dummy.restapiexample.com/api/v1/employee/${props.match.params.id}`)
 
       // Update state
-      setUser(data)
+      setUser(data.data)
     }
 
     // Invoke the async function
