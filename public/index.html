@@ -46,7 +46,7 @@
        console.log("I reached the react app with data: " + event.message);
        alert("I reached the react app with data: " + event.message);
        var infodiv = document.getElementById("info");
-       infodiv.HTML(event.message)
+       infodiv.innerHTML = event.message;
       }
     </script>
   </head>
