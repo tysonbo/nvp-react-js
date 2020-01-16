@@ -42,13 +42,13 @@
     
       function onMessage(message) {
       // Check sender origin to be trusted
-      alert(message);
-      alert(message.data);
-      alert(message.message);
-       console.log("I reached the react app with data: " + message.message);
-       alert("I reached the react app with data: " + message.message);
+      alert("message " + message);
+      alert("message.data " + message.data);
+      alert("message.message " + message.message);
+       console.log("I reached the react app with data: " + message.data);
+       alert("I reached the react app with data: " + message.data);
        var infodiv = document.getElementById("info");
-       infodiv.innerHTML = message.message;
+       infodiv.innerHTML = message.data;
       }
     </script>
   </head>
