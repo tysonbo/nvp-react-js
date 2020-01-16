@@ -32,16 +32,13 @@
     <title>React App</title>
 
     <script type="text/JavaScript">
-    $(document).ready(function(){
+    
       if (window.addEventListener) {
         window.addEventListener("message", onMessage, false)
       }
       else if (window.attachEvent) {
         window.attachEvent("onmessage", onMessage, false);
       }
-
-
-    });
     
       function onMessage(event) {
       // Check sender origin to be trusted
