@@ -46,8 +46,8 @@
       function onMessage(event) {
       // Check sender origin to be trusted
        var data = event.data;
-       console.log(data);
-       alert(data);
+       console.log("I reached the react app with data: " + data);
+       alert("I reached the react app with data: " + data);
         if (typeof (window[data.func]) == "function") {
             window[data.func].call(null, data.message);
         }
