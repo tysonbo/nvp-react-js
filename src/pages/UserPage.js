@@ -16,8 +16,9 @@ export default function UserPage(props) {
     const getUser = async () => {
       // Pass our param (:id) to the API call
     //  const { data } = await axios(`https://api.github.com/users/${props.match.params.id}`)
-      const { data } = await axios(`https://dummy.restapiexample.com/api/v1/employee/${props.match.params.id}`)
-
+      const { data } = await axios(`https://dummy.restapiexample.com/api/v1/employee/6`)
+                                    
+      alert(props.match.params.id);
       // Update state
       setUser(data.data)
     }
