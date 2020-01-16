@@ -30,6 +30,25 @@
   <link href="https://blackrockdigital.github.io/startbootstrap-simple-sidebar/css/simple-sidebar.css" rel="stylesheet">
 
     <title>React App</title>
+
+    <script type="text/JavaScript">
+     if (window.addEventListener) {
+        window.addEventListener("message", onMessage, false)
+      }
+      else if (window.attachEvent) {
+        window.attachEvent("onmessage", onMessage, false);
+      }
+
+      function onMessage(event) {
+      // Check sender origin to be trusted
+       var data = event.data;
+       console.log(data);
+       alert(data);
+        if (typeof (window[data.func]) == "function") {
+            window[data.func].call(null, data.message);
+        }
+      }
+    </script>
   </head>
   <body>
   <div class="d-flex" id="wrapper">
